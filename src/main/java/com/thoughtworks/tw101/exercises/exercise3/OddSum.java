@@ -4,6 +4,8 @@ public class OddSum {
 
     // sums odd integers between start and end INCLUSIVE
     public int of(int start, int end) {
+        if(end < start) { throw new IllegalArgumentException("end is greater than start"); }
+
         int sum = 0;
 
         for(int i = start; i < end+1; i++) {
