@@ -18,7 +18,7 @@ public class Troll implements Monster {
     }
 
     public void takeDamage(int amount) {
-        hitpoints -= (amount / 2);
+        setHitpoints(hitpoints - (amount / 2));
     }
 
     public void reportStatus() {
