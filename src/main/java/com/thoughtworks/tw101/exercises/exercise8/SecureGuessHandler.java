@@ -41,12 +41,7 @@ public class SecureGuessHandler {
 
     public int handleGuess(String guess) throws NumberFormatException {
         int num;
-
-        try {
-            num = Integer.parseInt(guess);
-        } catch(NumberFormatException e) {
-            throw new NumberFormatException();
-        }
+        num = Integer.parseInt(guess);
 
         return num;
     }
